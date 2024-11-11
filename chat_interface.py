@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore", message="Examining the path of torch.classes")
+
 import streamlit as st
 from response_system import ResponseSystem
 from step1 import AimagineKnowledgeBase
@@ -5,6 +8,7 @@ import asyncio
 from datetime import datetime
 import json
 import os
+
 
 class ChatInterface:
     def __init__(self):
